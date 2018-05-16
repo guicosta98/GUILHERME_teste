@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+<div class="col-lg-12">
+	<table class="table table-hover">
+		<thead>
+			<tr>
+				<th>
+					<a href="motoristas.html">Motoristas</a> - <a href="passageiros.html">Passsageiros</a> - <a href="corrida.html">Corridas</a>
+				</th>
+			</tr>
+		</thead>
+	</table>
+</div>
+	<head>
+		<title>Corridas Compartilhadas</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	</head>
+
+	<body onload ="start()">
+		<div class="container">
+			<div class="header clearfix">
+				<h2>Corridas Compartilhadas<small>: Corridas</small></h2>
+			</div>
+			<div class="jumbotron">
+				<form id="formularioC">
+					<div class="form-group">
+						<label>Nome do Motorista:</label>
+						<select id="nomeM" class="form-control"></select>
+					</div>
+					<div class="form-group">
+						<label>Nome do Passageiro:</label>
+						<select id="nomeP" class="form-control"></select>
+					</div>
+					<div class="form-group">
+						<label>Valor da corrida:</label>
+						<input type="text" id ="valor" class="form-control">
+					</div>
+					
+					<button type="submit" class="btn btn-primary">Cadastrar</button>
+				</form>	
+			</div>
+			<div class="row marketing">
+				<div class="col-lg-12">
+					<table class="table table-hover">
+						<thead>
+							<tr>
+								<th>Nome do Motorista</th>
+								<th>Nome do Passageiro</th>
+								<th>Valor</th>
+							</tr>
+						</thead>
+						<tbody id="resultadosC"></tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+		<script src = "js/mainC.js"></script>
+		<script src = "js/bootstrap.min.js"></script>
+	</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Corridas Compartilhadas</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	</head>
+
+	<body onload ="start()">
+		<div class="container">
+			<div class="header clearfix">
+				<h2>Corridas Compartilhadas</h2>
+			</div>
+			<div class="jumbotron">
+				<form id="formularioC">
+					<div class="form-group">
+						<label>O que deseja cadastrar?</label>
+					</div>
+					<div class="form-group">
+						<input type="button" class="btn btn-primary" value="Motoristas" onclick="window.location.href='motoristas.html'" />
+					</div>
+					<div class="form-group">
+						<input type="button" class="btn btn-primary" value="Passageiros" onclick="window.location.href='passageiros.html'" />
+					</div>
+					<div class="form-group">
+						<input type="button" class="btn btn-primary" value="Corridas" onclick="window.location.href='corrida.html'" />
+					</div>
+				</form>	
+			</div>
+		</div>
+		<script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+		<script src = "js/mainC.js"></script>
+		<script src = "js/bootstrap.min.js"></script>
+	</body>
+</html>
